@@ -9,13 +9,13 @@ class BookTests(TestCase):
         title="A good title",
         subtitle="An excellent subtitle",
         author="Tom Christie",
-        isnb="1234567890123",
+        isbn="1234567890123",
         )
     def test_book_content(self):
         self.assertEqual(self.book.title, "A good title")
         self.assertEqual(self.book.subtitle, "An excellent subtitle")
         self.assertEqual(self.book.author, "Tom Christie")
-        self.assertEqual(self.book.isnb, "1234567890123")
+        self.assertEqual(self.book.isbn, "1234567890123")
     def test_book_listview(self):
         response = self.client.get(reverse("home"))
         self.assertEqual(response.status_code, 200)

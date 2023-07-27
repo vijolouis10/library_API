@@ -13,7 +13,7 @@ class APITest(APITestCase):
             title="Django for APIs",
             subtitle="Build web APIs with Python and Django",
             author="William S. Vincent",
-            isnb="9781735467221",
+            isbn="9781735467221",
             )
 
     def test_api_listview(self):
